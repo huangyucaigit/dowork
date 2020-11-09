@@ -1,0 +1,7 @@
+import dowork.CacEmergency
+
+model {
+	CacEmergency cacEmergency
+}
+
+json tmpl.cacEmergency(cacEmergency)

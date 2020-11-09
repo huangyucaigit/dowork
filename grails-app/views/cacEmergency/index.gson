@@ -1,0 +1,12 @@
+import dowork.CacEmergency
+
+model {
+	Iterable<CacEmergency> cacEmergencyList
+	def cacEmergencyCount
+}
+
+json {
+	count cacEmergencyCount
+	list tmpl.cacEmergency(cacEmergencyList ?: [])
+}
+
